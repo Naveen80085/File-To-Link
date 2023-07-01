@@ -17,12 +17,12 @@ async def maintainers(b,m):
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Coded By [Adarsh Goel](https://github.com/adarsh-goel)",
+                    text="I am Coded By [TeluguBadi](https://t.me/TeluguBadi_Ofcl)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Developer💻", url=f"https://github.com/adarsh-goel")
+                                InlineKeyboardButton("Developer💻", url=f"https://t.me/TeluguBadi_Ofcl")
                             ]
                         ]
                     ),
@@ -42,7 +42,7 @@ async def follow_user(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("FOLLOW ME", url=f"https://GITHUB.COM/adarsh-goel")
+                                InlineKeyboardButton("FOLLOW ME", url=f"https://t.me/TeluguBadi_Ofcl")
                             ]
                         ]
                     ),
@@ -81,7 +81,7 @@ async def ping(b, m):
     
     
     
-@StreamBot.on_message(filters.private & filters.regex("status📊"))
+@StreamBot.on_message(filters.private & filters.regex("status"))
 async def stats(bot, update):
   currentTime = readable_time((time.time() - StartTime))
   total, used, free = shutil.disk_usage('.')
